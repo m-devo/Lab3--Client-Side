@@ -1,8 +1,4 @@
 ### Lab3--Client-Side --Mohamed Ahmed Hassan
-
-## [Display With Github Pages](https://m-devo.github.io/pages/)
-
-
 ## Screenshots:
 
 ![Lab Screenshot](./screenshots/NAV.png)
