@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.navbar {
+    background-color: black;
+    width: 100%; 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar ul {
+    list-style: none;
+    font-size: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+div a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 2rem; 
+    display: inline-block;
+}
+
+
+.home {
+    background-color: green;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* What’s the difference between the following display values: inline, block, inline-block?
+
+You can refer to the following links: 
+
+https://www.w3schools.com/css/css_inline-block.asp
+
+https://www.w3schools.com/cssref/pr_class_display.asp 
+
+https://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block 
+
+http://dustwell.com/div-span-inline-block.html 
+
+https://alligator.io/css/display-inline-vs-inline-block/ 
+
+http://learnlayout.com/inline-block.html 
+
+-- display:inline element cannot start a new line nor have a width or height
+    If we used mmargin or padding it will only apply spacing on right and left 
+    not top or bottom.
+-- diplay:block it will start a new line and can have a height and width, and padding and margin 
+    in four sides.
+-- display inline-block it is like inline we don't start a new line 
+    and like block element it can have height and width, and padding and margin in four sides
+
+*/
+
+.hello {
+    background-color: #ddd;
+    font-size: 2.4rem;
+    color: black;
+    /* padding: 100rem; */
+    padding: 2rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+/* Change the navbar to be position: sticky. (What’s the difference?). 
+When I changed navbar to position:fixed it has made the navbar always on the top 
+"making the the whole pade as its view port"
+However when I changed it to position:sticky it has made the navbar
+"sticky" to the top of the page, because "body" became the parent element therefor.
+
+*/
+
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    margin: auto;
+    background-color: #333;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.img-text {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.img-text h3 {
+    font-size: 2rem;
+    margin: 0;
+}   
+
+.img-text p {
+    font-size: 1.4rem;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 100rem;
+    margin: 3rem auto 5rem auto ;
+}
+
+.gallery-item { 
+    background-color: white;
+    border: .5rem solid #ddd;
+    width: 30rem; 
+    text-align: left;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 20rem;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery-item .gallery-text  {
+    padding: 2rem;
+    font-size: 3rem;
+    color: #666;
+    text-align: center;
+}
+
